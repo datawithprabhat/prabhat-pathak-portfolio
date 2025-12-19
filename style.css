@@ -49,11 +49,12 @@ nav a {
 .content {
   padding: 40px;
 }
-.card {
+ .card {
   background: #020617;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
+  color: #e5e7eb;        /* ✅ ADD THIS */
 }
 footer {
   text-align: center;
