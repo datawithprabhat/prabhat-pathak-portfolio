@@ -1,11 +1,4 @@
 <!-- =========================
- PRABHAT PATHAK | DATA ANALYST PORTFOLIO
- Multi-page GitHub Pages Website
- Pages: index.html | skills.html | experience.html | contact.html
- Author: ChatGPT
-========================= -->
-
-<!-- =========================
  FILE: style.css (COMMON STYLES)
 ========================= -->
 body {
@@ -49,12 +42,32 @@ nav a {
 .content {
   padding: 40px;
 }
- .card {
-  background: #020617;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  color: #e5e7eb;        /* ✅ ADD THIS */
+.card {
+  background: linear-gradient(135deg, #020617, #020617 40%, #020617);
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  color: #f8fafc;              /* VERY LIGHT TEXT */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+.card h3 {
+  color: #93c5fd;              /* Light blue heading */
+  margin-bottom: 6px;
+}
+
+.card p {
+  color: #e5e7eb;              /* Light grey body text */
+  line-height: 1.6;
+}
+
+.card em {
+  color: #cbd5f5;              /* Visible date text */
+  font-style: italic;
+}
+
+.card strong {
+  color: #bfdbfe;              /* Highlighted keywords */
 }
 footer {
   text-align: center;
