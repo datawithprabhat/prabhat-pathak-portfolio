@@ -74,3 +74,11 @@ footer {
   padding: 15px;
   background: #020617;
 }
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.hero-buttons .btn {
+  margin-right: 12px;
+}
+
