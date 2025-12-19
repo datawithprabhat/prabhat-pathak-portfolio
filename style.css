@@ -1,0 +1,62 @@
+<!-- =========================
+ PRABHAT PATHAK | DATA ANALYST PORTFOLIO
+ Multi-page GitHub Pages Website
+ Pages: index.html | skills.html | experience.html | contact.html
+ Author: ChatGPT
+========================= -->
+
+<!-- =========================
+ FILE: style.css (COMMON STYLES)
+========================= -->
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #020617;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px;
+}
+.hero-img img {
+  width: 220px;
+  border-radius: 50%;
+}
+.btn {
+  background: #2563eb;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.content {
+  padding: 40px;
+}
+.card {
+  background: #020617;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #020617;
+}

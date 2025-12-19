@@ -1,0 +1,67 @@
+<!-- =========================
+ PRABHAT PATHAK | DATA ANALYST PORTFOLIO
+ Multi-page GitHub Pages Website
+ Pages: index.html | skills.html | experience.html | contact.html
+ Author: ChatGPT
+========================= -->
+
+
+<!-- =========================
+ FILE: contact.html (CONTACT FORM – EMAILJS READY)
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav>
+  <h2>Prabhat Pathak</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="content">
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <input type="text" name="from_name" placeholder="Your Name" required />
+    <input type="email" name="reply_to" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <!-- EmailJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("OEDbHCsYCEPWwMnFU");
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      emailjs.sendForm('service_2xa0w92', 'template_hmiraf5', this)
+        .then(function () {
+          alert('Message sent successfully!');
+          document.getElementById('contact-form').reset();
+        }, function (error) {
+          alert('Failed to send message. Please try again.');
+        });
+    });
+  </script>
+
+  <p>Email: abmprabhat@gmail.com</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/pathakprabhat/" target="_blank">View Profile</a></p>
+  <p>GitHub: <a href="https://github.com/datawithprabhat" target="_blank">View Repositories</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Prabhat Pathak</p>
+</footer>
+</body>
+</html>
